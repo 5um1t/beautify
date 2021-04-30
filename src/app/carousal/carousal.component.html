@@ -1,0 +1,107 @@
+<div
+  id="carouselExampleCaptions"
+  class="carousel slide"
+  data-bs-ride="carousel"
+>
+  <div class="carousel-indicators">
+    <button
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide-to="0"
+      class="active"
+      aria-current="true"
+      aria-label="Slide 1"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide-to="1"
+      aria-label="Slide 2"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide-to="2"
+      aria-label="Slide 3"
+    ></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active vh-100">
+      <img
+        src="../../assets/img/carousal-1 (2).jpg"
+        class="d-block w-100"
+        alt="Nail-Paints"
+      />
+      <div class="carousel-caption d-none d-md-block">
+        <h1>Flat 10% off!!!</h1>
+        <p>Complementry Eye Shadows On All Order Of Rs. 599</p>
+      </div>
+    </div>
+    <div class="carousel-item vh-100">
+      <img
+        src="../../assets/img/carousal-2.jpg"
+        class="d-block w-100"
+        alt="Mirror"
+      />
+      <div class="carousel-caption d-none d-md-block">
+        <h1>Upto 25% off!!!</h1>
+        <p>Intence Breathtaking Volume and Length</p>
+      </div>
+    </div>
+    <div class="carousel-item vh-100">
+      <img
+        src="../../assets/img/carousal-3.jpg"
+        class="d-block w-100"
+        alt="Makeup-Kit"
+      />
+      <div class="carousel-caption d-none d-md-block">
+        <h1>Staring From Rs. 299</h1>
+        <p>Explore A Range Of Brands</p>
+      </div>
+    </div>
+  </div>
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-bs-target="#carouselExampleCaptions"
+    data-bs-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#carouselExampleCaptions"
+    data-bs-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div class="row carousal-container">
+  <div
+    class="col-12 col-sm-6 py-2 col-md-4 col-lg-3 col-xl-4"
+    *ngFor="let ICarousal of "Carousal_List"
+  >
+    <div class="card h-100 p-2 shadow-lg">
+      <img
+        [src]="card.img"
+        alt="Card image cap"
+        class="card-image-container card-img-top w-100 h-100"
+      />
+      <span>
+        <div>
+          <h5 class="card-title">{{ card.title }}</h5>
+        </div>
+        <div class="card-text">
+          {{ card.description }}
+        </div>
+        <button class="btn btn-primary btn-dark rounded-pil">
+          {{ card.buttonText }}
+        </button>
+      </span>
+    </div>
+  </div>
+</div>
