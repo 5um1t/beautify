@@ -3,30 +3,3 @@
     <b> SHOP OUR COLLECTIONS </b>
   </h2>
 </div>
-<div class="row m-0">
-  <div
-    class="card-list-container col-md-4 my-5 h-100"
-    *ngFor="let card of cards"
-  >
-    <div class="row">
-      <div class="card shadow-lg popover-body">
-        <img
-          [src]="card.img"
-          alt="Card image cap"
-          class="card-image-container card-img-top w-100 h-100"
-        />
-        <span>
-          <div>
-            <h5 class="card-title">{{ card.title }}</h5>
-          </div>
-          <div class="card-text">
-            {{ card.description }}
-          </div>
-          <button class="btn btn-primary btn-dark rounded-pil">
-            {{ card.buttonText }}
-          </button>
-        </span>
-      </div>
-    </div>
-  </div>
-</div>
