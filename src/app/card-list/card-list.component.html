@@ -4,11 +4,13 @@
     *ngFor="let card of cardList"
   >
     <div class="card h-100 p-2 shadow-lg">
-      <img
-        [src]="card.img"
-        alt="Card image cap"
-        class="card-image-container card-img-top w-100 h-100"
-      />
+      <div class="img-container img-hover-zoom">
+        <img
+          [src]="card.img"
+          alt="Card image cap"
+          class="card-image-container card-img-top w-100 h-100 img-fluid"
+        />
+      </div>
       <span>
         <div>
           <h5 class="card-title">{{ card.title }}</h5>
