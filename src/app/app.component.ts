@@ -4,7 +4,6 @@ import {
   NgZone,
   ChangeDetectorRef,
 } from '@angular/core';
-import { AnimationOptions } from 'ngx-lottie';
 import { PrimeNGConfig } from 'primeng/api';
 import { cards } from './home-page/cards';
 
@@ -15,9 +14,7 @@ import { cards } from './home-page/cards';
 })
 export class AppComponent {
   title = 'beautfy';
-  options: AnimationOptions = {
-    path: '/assets/animation.json',
-  };
+
   cardList = cards;
   constructor(private primengConfig: PrimeNGConfig) {}
 
