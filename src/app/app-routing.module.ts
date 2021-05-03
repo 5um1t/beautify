@@ -8,6 +8,10 @@ const routes: Routes = [
     component: HomePageComponent,
   },
   {
+    path: '**',
+    component: HomePageComponent,
+  },
+  {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full',
