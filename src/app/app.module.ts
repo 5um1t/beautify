@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { ParallaxScrollComponent } from './parallax-scroll/parallax-scroll.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -22,6 +22,7 @@ import { CardListComponent } from './card-list/card-list.component';
     FooterComponent,
     CarousalComponent,
     CardListComponent,
+    ParallaxScrollComponent,
   ],
   imports: [
     BrowserModule,
