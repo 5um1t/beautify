@@ -13,6 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomePageModule } from './pages/home-page/home-page.module';
 import { CarouselModule } from 'primeng/carousel';
 import { CardListComponent } from './card-list/card-list.component';
+import { ParallaxEffectComponent } from './parallax-effect/parallax-effect.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { CardListComponent } from './card-list/card-list.component';
     FooterComponent,
     CarousalComponent,
     CardListComponent,
+    ParallaxEffectComponent,
   ],
   imports: [
     BrowserModule,
