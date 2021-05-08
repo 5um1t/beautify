@@ -1,10 +1,4 @@
-import {
-  Component,
-  ChangeDetectionStrategy,
-  NgZone,
-  ChangeDetectorRef,
-} from '@angular/core';
-import { PrimeNGConfig } from 'primeng/api';
+import { Component } from '@angular/core';
 import { cards } from './home-page/cards';
 
 @Component({
@@ -16,9 +10,7 @@ export class AppComponent {
   title = 'beautfy';
 
   cardList = cards;
-  constructor(private primengConfig: PrimeNGConfig) {}
+  constructor() {}
 
-  ngOnInit() {
-    this.primengConfig.ripple = true;
-  }
+  ngOnInit() {}
 }
