@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
+import { PrimeNGConfig } from 'primeng/api';
 import { cards } from './home-page/cards';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,9 +8,9 @@ import { cards } from './home-page/cards';
 })
 export class AppComponent {
   title = 'beautfy';
-
   cardList = cards;
-  constructor() {}
-
-  ngOnInit() {}
+  constructor(private primengConfig: PrimeNGConfig) {}
+  ngOnInit() {
+    this.primengConfig.ripple = true;
+  }
 }
