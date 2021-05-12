@@ -14,6 +14,7 @@ import { CarouselModule } from 'primeng/carousel';
 import { CardListComponent } from './card-list/card-list.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
+import { ParallaxComponent } from './parallax/parallax.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { RegisterPageComponent } from './register-page/register-page.component';
     CardListComponent,
     LoginPageComponent,
     RegisterPageComponent,
+    ParallaxComponent,
   ],
   imports: [
     BrowserModule,
