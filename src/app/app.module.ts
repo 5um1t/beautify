@@ -13,6 +13,8 @@ import { HomePageModule } from './pages/home-page/home-page.module';
 import { CarouselModule } from 'primeng/carousel';
 import { CardListComponent } from './card-list/card-list.component';
 import { ParallaxComponent } from './parallax/parallax.component';
+import { LoginPageComponent } from './login-page/login-page.component';
+import { RegisterPageComponent } from './register-page/register-page.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { ParallaxComponent } from './parallax/parallax.component';
     CarousalComponent,
     CardListComponent,
     ParallaxComponent,
+    LoginPageComponent,
+    RegisterPageComponent,
   ],
   imports: [
     BrowserModule,

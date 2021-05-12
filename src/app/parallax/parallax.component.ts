@@ -10,6 +10,6 @@ export class ParallaxComponent implements OnInit {
 
   ngOnInit(): void {
     var image = document.getElementsByClassName('thumbnail');
-    new simpleParallax(image, { scale: 1.5 });
+    new simpleParallax(image);
   }
 }
