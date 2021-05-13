@@ -6,7 +6,7 @@ import { cards } from './cards';
   styleUrls: ['./home-page.component.sass'],
 })
 export class HomePageComponent implements OnInit {
-  public cards = cards;
+  public cardList = cards;
 
   constructor() {}
 
