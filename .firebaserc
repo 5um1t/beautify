@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "courses-f9602": {
+      "hosting": {
+        "beautfy": [
+          "courses-f9602"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "beautfy-f47e0"
+  }
+}
