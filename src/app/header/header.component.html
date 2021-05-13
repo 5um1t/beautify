@@ -37,11 +37,11 @@
     Beautfy</a
   >
   <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-    <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
-    <li><a href="#" class="nav-link px-2 link-dark">Products</a></li>
-    <li><a href="#" class="nav-link px-2 link-dark">Pricing</a></li>
-    <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
-    <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
+    <li><a class="nav-link px-2 link-secondary">Home</a></li>
+    <li><a class="nav-link px-2 link-dark">Products</a></li>
+    <li><a class="nav-link px-2 link-dark">Pricing</a></li>
+    <li><a class="nav-link px-2 link-dark">FAQs</a></li>
+    <li><a class="nav-link px-2 link-dark">About</a></li>
   </ul>
 
   <div class="col-md-3 text-end d-none d-sm-block">
@@ -66,7 +66,8 @@
     style="width: 20rem; height: 100%"
   >
     <a
-      href="/menu"
+      [routerLink]="['/home']"
+      routerLinkActive="router-link-active"
       class="
         d-flex
         align-items-center
@@ -81,19 +82,19 @@
     <hr />
     <ul class="nav nav-pills flex-column mb-auto">
       <li class="nav-item">
-        <a href="#" class="nav-link active" aria-current="page"> Home </a>
+        <a class="nav-link active" aria-current="page"> Home </a>
       </li>
       <li>
-        <a href="#" class="nav-link link-dark"> Dashboard </a>
+        <a class="nav-link link-dark"> Dashboard </a>
       </li>
       <li>
-        <a href="#" class="nav-link link-dark"> Orders </a>
+        <a class="nav-link link-dark"> Orders </a>
       </li>
       <li>
-        <a href="#" class="nav-link link-dark"> Products </a>
+        <a class="nav-link link-dark"> Products </a>
       </li>
       <li>
-        <a href="#" class="nav-link link-dark"> Customers </a>
+        <a class="nav-link link-dark"> Customers </a>
       </li>
     </ul>
     <hr />
