@@ -45,21 +45,8 @@
   </ul>
 
   <div class="col-md-3 text-end d-none d-sm-block">
-    <button
-      routerLink="/login"
-      routerLinkActive="active"
-      type="button"
-      class="btn btn-outline-primary me-2"
-    >
-      Login
-    </button>
-    <button
-      routerLink="/register"
-      routerLinkActive="active"
-      type="button"
-      class="btn btn-primary me-2"
-    >
-      Sign-up
+    <button (click)="logout()" type="button" class="btn btn-primary me-2">
+      logout
     </button>
     <button
       type="button "
