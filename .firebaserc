@@ -1,12 +1,5 @@
 {
   "targets": {
-    "courses-f9602": {
-      "hosting": {
-        "beautfy": [
-          "courses-f9602"
-        ]
-      }
-    },
     "beautfy-f47e0": {
       "hosting": {
         "beautfy": [
