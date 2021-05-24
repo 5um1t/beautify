@@ -5,24 +5,37 @@
         <form>
           <h1 class="h3 mb-4 fw-normal">Please sign in</h1>
           <div class="form-floating">
-            <input type="email" class="form-control" />
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Username"
+              #userEmail
+              required
+            />
             <label for="floatingInput">Email address</label>
           </div>
           <div class="form-floating">
-            <input type="password" class="form-control" />
+            <input
+              type="password"
+              class="form-control"
+              placeholder="Password"
+              #userPassword
+              required
+            />
             <label for="floatingInput">Password</label>
           </div>
           <button
             class="w-100 btn btn-lg btn-primary mt-5"
-            [routerLink]="['/home']"
             routerLinkActive="router-link-active"
             type="submit"
+            (click)="signIn(userEmail.value, userPassword.value)"
+            [routerLink]="['/home']"
           >
             Sign in
           </button>
           <button
             class="w-100 btn btn-lg btn-danger mt-1"
-            (click)="login()"
+            (click)="loginwithgoogle()"
             type="submit"
           >
             Sign with google
