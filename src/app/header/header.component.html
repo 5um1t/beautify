@@ -20,6 +20,7 @@
       col-11
       text-dark text-decoration-none
     "
+    routerLink="/home"
   >
     <button class="btn" type="button">
       <img
@@ -37,11 +38,12 @@
     Beautfy</a
   >
   <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-    <li><a class="nav-link px-2 link-secondary">Home</a></li>
-    <li><a class="nav-link px-2 link-dark">Products</a></li>
-    <li><a class="nav-link px-2 link-dark">Pricing</a></li>
-    <li><a class="nav-link px-2 link-dark">FAQs</a></li>
-    <li><a class="nav-link px-2 link-dark">About</a></li>
+    <li><a class="nav-link px-2 link-secondary" routerLink="/home">Home</a></li>
+    <li>
+      <a class="nav-link px-2 link-dark" routerLink="/products">Products</a>
+    </li>
+    <li><a class="nav-link px-2 link-dark" routerLink="/faq">FAQs</a></li>
+    <li><a class="nav-link px-2 link-dark" routerLink="/about">About</a></li>
   </ul>
 
   <div class="col-md-3 text-end d-none d-sm-block">
@@ -52,6 +54,7 @@
       type="button "
       class="pi pi-shopping-cart btn btn-outline-primary"
       style="font-size: 1.5em"
+      routerLink="/cart"
     ></button>
   </div>
 </nav>
@@ -91,7 +94,7 @@
         <a class="nav-link link-dark"> Orders </a>
       </li>
       <li>
-        <a class="nav-link link-dark"> Products </a>
+        <a class="nav-link link-dark" routerLink="/products"> Products </a>
       </li>
       <li>
         <a class="nav-link link-dark"> Customers </a>

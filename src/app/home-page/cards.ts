@@ -37,7 +37,7 @@ export const cards: card[] = [
   },
   {
     title: 'Mills Makeup Kits',
-    description: 'MILK MAKEUP MVPs Set MEET THE ALL STARS LIMITED EDITION',
+    description: 'Milk Makeup Mvps Set Meet the All Stars Limited Edition',
     buttonText: 'Buy Now',
     img: 'assets/img/card-66.webp',
   },

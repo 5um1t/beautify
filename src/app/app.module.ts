@@ -18,6 +18,10 @@ import { AngularFireAuthGuard } from '@angular/fire/auth-guard';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { environment } from 'src/environments/environment';
+import { ProductsComponent } from './products/products.component';
+import { AboutComponent } from './about/about.component';
+import { FaqsComponent } from './faqs/faqs.component';
+import { CartComponent } from './cart/cart.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +33,10 @@ import { environment } from 'src/environments/environment';
     LoginPageComponent,
     RegisterPageComponent,
     ParallaxComponent,
+    ProductsComponent,
+    AboutComponent,
+    FaqsComponent,
+    CartComponent,
   ],
   imports: [
     BrowserModule,
